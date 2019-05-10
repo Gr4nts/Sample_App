@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  get 'demo/index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get 'users/new'
+  root 'demo#home'
+  get '/help', to: 'demo#help'
+  get '/about', to: 'demo#about'
+  get '/contact', to: 'demo#contact'
+
 end
